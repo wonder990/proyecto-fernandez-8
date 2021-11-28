@@ -1,0 +1,409 @@
+// abstract
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+.nav-li-style {
+    @include text__style__nav
+}
+.font-size-icons {
+    @include font__size__icons
+}
+
+nav {
+    background: linear-gradient(to right,RGB(255, 0, 212,0.9),RGB(228, 245, 0, 0.9),RGB(0, 147, 245,0.9),RGB(8, 245, 0,0.9));
+    .logo {
+        -webkit-text-stroke: 1px black;
+        color: white;
+        font-size: 48px;
+        font-family: 'Kaushan Script', cursive;
+        text-shadow: black 3px 2px;
+        text-decoration: none;
+        margin: 0;
+    }
+    a {
+        color: #ffff !important;
+    }
+}
+nav a:hover {
+    transition: 0.3s !important;
+    color: #303030 !important;
+}
+
+// biografia
+
+.body_biografia {
+    background: url(../imagenes/f7.jpg);
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.body_biografia:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+}
+.position_1 {
+    position: relative;
+    .text_color {
+        color: white;
+        h1 {
+            font-size: 50px;
+            font-family: 'Kaushan Script', cursive;
+        }
+        p {
+            font-size: 20px;
+            font-family: "Archivo Narrow", sans-serif;
+        }
+    }
+}
+
+// conciertos
+.tables {
+    position: relative;
+    tr {
+        color: white;
+        font-size: 16px;
+    }
+}
+
+.body_conciertos {
+    background: url(../imagenes/f1.jpg  );
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    position: relative;
+}
+.body_conciertos:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+}
+
+// playlist
+.body_playlist {
+    height: auto;
+    background: url(../imagenes/f8.jpg);
+    position: relative;
+    background-attachment: fixed;
+    align-items: center;
+}
+.body_playlist:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+}
+.contenedor {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "text1 text1 link link"
+    "frame1 frame2 frame3 frame4";
+    .caja-1 {
+        color: #ffff;
+        grid-area: text1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+        }
+        p {
+            font-size: 20px;
+            font-family: "Archivo Narrow", sans-serif;
+        }
+    }
+    .caja-2 {
+        margin: 20px;
+        grid-area: link;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-3 {
+        grid-area: frame1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-4 {
+        grid-area: frame2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-5 {
+        grid-area: frame3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .caja-6 {
+        grid-area: frame4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1274px) {
+        .contenedor {
+            position: relative;
+            display: grid;
+            grid-template-areas:
+            "text1 text1 text1"
+            "link link link"
+            "frame1 frame2 frame3"
+            "frame4 frame4 frame4";
+            .caja-1 {
+                margin: 40px;
+                color: #ffff;
+                grid-area: text1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .caja-2 {
+                margin: 40px;
+                grid-area: link;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .caja-3 {
+                grid-area: frame1;
+            }
+            .caja-4 {
+                grid-area: frame2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .caja-5 {
+                grid-area: frame3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .caja-6 {
+                grid-area: frame4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }    
+      }
+}
+@media screen and (max-width: 927px) {
+    .contenedor {
+        position: relative;
+        display: grid;
+        grid-template-areas:
+        "text1 text1"
+        "link link"
+        "frame1 frame2 "
+        "frame3 frame4";
+        .caja-1 {
+            margin: 40px;
+            color: #ffff;
+            grid-area: text1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .caja-2 {
+            margin: 40px;
+            grid-area: link;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-3 {
+            grid-area: frame1;
+        }
+        .caja-4 {
+            grid-area: frame2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-5 {
+            grid-area: frame3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-6 {
+            grid-area: frame4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+  }
+}
+@media screen and (max-width: 640px) {
+    .contenedor {
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-areas:
+        "text1"
+        "link"
+        "frame1"
+        "frame2 "
+        "frame3" 
+        "frame4";
+        .caja-1 {
+            margin: 40px;
+            color: #ffff;
+            grid-area: text1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .caja-2 {
+            margin: 40px;
+            grid-area: link;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-3 {
+            grid-area: frame1;
+        }
+        .caja-4 {
+            grid-area: frame2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-5 {
+            grid-area: frame3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caja-6 {
+            grid-area: frame4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+  }
+}
+
+
+
+// galeria
+
+.galeria {
+    position: relative;
+    .text-4 {
+        color: #ffff;
+    }
+}
+.body_galeria {
+    background: url(../imagenes/f11.jpg);
+    height: auto;
+    position: relative;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.body_galeria:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+}
+
+// contacto
+.contact {
+    position: relative;
+    .text {
+        color: #ffff;
+    }
+}
+.body_contacto {
+    height: auto;
+    background: url(../imagenes/f8.jpg);
+    position: relative;
+    background-attachment: fixed;
+    align-items: center;
+}
+.body_contacto:before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+}
+
+.position_1 {
+    position: relative;
+    .text_color {
+        color: white;
+        h1 {
+            font-size: 50px;
+            font-family: 'Kaushan Script', cursive;
+        }
+        p {
+            font-size: 20px;
+            font-family: "Archivo Narrow", sans-serif;
+        }
+    }
+}
+
+// footer
+
+footer {
+    margin-top: 40px;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    p {
+        color: white;
+        font-size: ($font-size-text)-3;
+        font-family: "Archivo Narrow", sans-serif;
+    }
+    .icono-1, .icono-2, .icono-3, .icono-4 {
+        font-size: ($font-size-logo)-2; }
+        .icono-1 i {
+            color: #083aa7; }
+          
+        .icono-2 i {
+            background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent; }
+          
+        .icono-3 i {
+            color: #1DA1F2; }
+          
+        .icono-4 i {
+            color: red; }   
+}

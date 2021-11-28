@@ -1,0 +1,10 @@
+
+@mixin font__size__icons {
+  font-size: $size-icons;
+}
+
+@mixin text__style__nav { 
+  font-size: $font-size-list;
+  font-family: $font-text;
+}
+
