@@ -5,6 +5,10 @@
 .font-size-icons {
   font-size: 45px; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 nav {
   background: linear-gradient(to right, RGB(255, 0, 212, 0.9), RGB(228, 245, 0, 0.9), RGB(0, 147, 245, 0.9), RGB(8, 245, 0, 0.9)); }
   nav .logo {
@@ -18,7 +22,7 @@ nav {
   nav a {
     color: #ffff !important; }
 
-nav a:hover {
+li a:hover {
   transition: 0.3s !important;
   color: #303030 !important; }
 
@@ -49,6 +53,13 @@ nav a:hover {
       font-size: 20px;
       font-family: "Archivo Narrow", sans-serif; }
 
+.tc1 {
+  position: relative; }
+  .tc1 h1 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Kaushan Script', cursive; }
+
 .tables {
   position: relative; }
   .tables tr {
@@ -57,10 +68,10 @@ nav a:hover {
 
 .body_conciertos {
   background: url(../imagenes/f1.jpg);
-  background-repeat: repeat-y;
   background-attachment: fixed;
-  background-size: 100%;
-  position: relative; }
+  background-size: 1920px;
+  position: relative;
+  background-repeat: no-repeat; }
 
 .body_conciertos:before {
   content: '';
@@ -75,9 +86,9 @@ nav a:hover {
 .body_playlist {
   height: auto;
   background: url(../imagenes/f8.jpg);
-  position: relative;
   background-attachment: fixed;
-  align-items: center; }
+  background-size: 1920px;
+  position: relative; }
 
 .body_playlist:before {
   content: '';
@@ -91,10 +102,11 @@ nav a:hover {
 
 .contenedor {
   position: relative;
-  height: 100vh;
+  height: auto;
   display: grid;
   grid-template-areas: "text1 text1 link link" "frame1 frame2 frame3 frame4"; }
   .contenedor .caja-1 {
+    margin: 5vw;
     color: #ffff;
     grid-area: text1;
     display: flex;
@@ -252,11 +264,10 @@ nav a:hover {
 
 .body_galeria {
   background: url(../imagenes/f11.jpg);
-  height: auto;
-  position: relative;
-  background-size: 100%;
-  background-repeat: repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: 1920px;
+  background-repeat: no-repeat;
+  position: relative; }
 
 .body_galeria:before {
   content: '';
@@ -276,9 +287,9 @@ nav a:hover {
 .body_contacto {
   height: auto;
   background: url(../imagenes/f8.jpg);
-  position: relative;
   background-attachment: fixed;
-  align-items: center; }
+  background-size: 1920px;
+  position: relative; }
 
 .body_contacto:before {
   content: '';
@@ -302,7 +313,7 @@ nav a:hover {
       font-family: "Archivo Narrow", sans-serif; }
 
 footer {
-  margin-top: 40px;
+  margin-top: 200px;
   position: relative;
   background-color: #272727; }
   footer p {
