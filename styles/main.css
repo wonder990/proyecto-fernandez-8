@@ -151,7 +151,6 @@ li a:hover {
     display: grid;
     grid-template-areas: "text1 text1 text1" "link link link" "frame1 frame2 frame3" "frame4 frame4 frame4"; }
     .contenedor .caja-1 {
-      margin: 40px;
       color: #ffff;
       grid-area: text1;
       display: flex;
@@ -159,7 +158,6 @@ li a:hover {
       align-items: center;
       flex-direction: column; }
     .contenedor .caja-2 {
-      margin: 40px;
       grid-area: link;
       display: flex;
       justify-content: center;
@@ -188,7 +186,6 @@ li a:hover {
     display: grid;
     grid-template-areas: "text1 text1" "link link" "frame1 frame2 " "frame3 frame4"; }
     .contenedor .caja-1 {
-      margin: 40px;
       color: #ffff;
       grid-area: text1;
       display: flex;
@@ -196,7 +193,6 @@ li a:hover {
       align-items: center;
       flex-direction: column; }
     .contenedor .caja-2 {
-      margin: 40px;
       grid-area: link;
       display: flex;
       justify-content: center;
@@ -226,7 +222,6 @@ li a:hover {
     display: grid;
     grid-template-areas: "text1" "link" "frame1" "frame2 " "frame3"  "frame4"; }
     .contenedor .caja-1 {
-      margin: 40px;
       color: #ffff;
       grid-area: text1;
       display: flex;
@@ -234,7 +229,6 @@ li a:hover {
       align-items: center;
       flex-direction: column; }
     .contenedor .caja-2 {
-      margin: 40px;
       grid-area: link;
       display: flex;
       justify-content: center;

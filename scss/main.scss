@@ -182,8 +182,7 @@ li a:hover {
             "link link link"
             "frame1 frame2 frame3"
             "frame4 frame4 frame4";
-            .caja-1 {
-                margin: 40px;
+            .caja-1 {            
                 color: #ffff;
                 grid-area: text1;
                 display: flex;
@@ -192,7 +191,6 @@ li a:hover {
                 flex-direction: column;
             }
             .caja-2 {
-                margin: 40px;
                 grid-area: link;
                 display: flex;
                 justify-content: center;
@@ -231,7 +229,6 @@ li a:hover {
         "frame1 frame2 "
         "frame3 frame4";
         .caja-1 {
-            margin: 40px;
             color: #ffff;
             grid-area: text1;
             display: flex;
@@ -240,7 +237,6 @@ li a:hover {
             flex-direction: column;
         }
         .caja-2 {
-            margin: 40px;
             grid-area: link;
             display: flex;
             justify-content: center;
@@ -282,7 +278,6 @@ li a:hover {
         "frame3" 
         "frame4";
         .caja-1 {
-            margin: 40px;
             color: #ffff;
             grid-area: text1;
             display: flex;
@@ -291,7 +286,6 @@ li a:hover {
             flex-direction: column;
         }
         .caja-2 {
-            margin: 40px;
             grid-area: link;
             display: flex;
             justify-content: center;
