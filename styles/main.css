@@ -24,7 +24,8 @@ nav {
 
 li a:hover {
   transition: 0.3s !important;
-  color: #303030 !important; }
+  color: #303030 !important;
+  font-size: 17.5px; }
 
 .body_biografia {
   background: url(../imagenes/f7.jpg);
@@ -57,14 +58,30 @@ li a:hover {
   position: relative; }
   .tc1 h1 {
     color: white;
-    font-size: 48px;
+    font-size: 58px;
     font-family: 'Kaushan Script', cursive; }
 
 .tables {
   position: relative; }
+  .tables .subt h2 {
+    color: white;
+    font-size: 20x;
+    font-weight: 750; }
+  .tables .subt h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 750; }
   .tables tr {
     color: white;
     font-size: 16px; }
+    .tables tr td a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700; }
+    .tables tr td a:hover {
+      color: #707070;
+      transition: 0.2s;
+      font-size: 15.5px; }
 
 .body_conciertos {
   background: url(../imagenes/f1.jpg);
@@ -119,7 +136,7 @@ li a:hover {
       font-size: 20px;
       font-family: "Archivo Narrow", sans-serif; }
   .contenedor .caja-2 {
-    margin: 20px;
+    margin: 3vw;
     grid-area: link;
     display: flex;
     justify-content: center;
