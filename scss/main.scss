@@ -172,6 +172,44 @@ li a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        .perfil {
+            display: flex;
+            background:  rgb(0, 36, 0);
+            width: 230px;
+            height: 55px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            img {
+                max-width: 45px;
+                margin-right: 30px;
+            }
+            p {
+                color: white;
+                padding: 0;
+                margin: 0;
+                margin-left: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .seguir {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .seguir img {
+                margin: 0;
+                padding: 0;
+                width: 20px;
+                border-radius: 50%;
+            }
+            .seguir a {
+                text-decoration: none;
+                color: white;
+                margin-left: 10px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 11px;
+            }
+        }
     }
     .caja-3 {
         grid-area: frame1;
